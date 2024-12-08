@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link rel="icon" href="projects.ico" type="image/x-icon">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden; 
+            overflow-y: auto; 
+        }
+
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('My.png') no-repeat center center fixed;
+            background-size: cover;
+            color: darkgoldenrod;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 20px;
+            position: relative;
+            min-height: 100%;
+        }
+
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1; 
+        }
+
+      
+        header {
+            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            color: maroon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+      
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+       
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .image-box {
+            width: 280px;
+            height: 320px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .image-box:hover {
+            transform: scale(1.05);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-family: 'Playfair Display', serif;
+            color: maroon;
+            text-align: center;
+            margin-bottom: 10px;
+            padding-top: 15px;
+        }
+
+        /* Button Styling */
+        .back-btn {
+            position: absolute;
+            bottom: 20px;
+            width: 200px;
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 25px;
+            background-color: #A67B75;
+            color: white;
+            border: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #8C675D;
+            transform: scale(1.05);
+        }
+
+        .image-box, .content {
+            width: 100%;
+            max-width: 100%; 
+        }
+
+    </style>
+</head>
+
+<body>
+   
+    <header>
+        <p>Projects</p>
+    </header>
+
+   
+    <div class="content">
+        <h2>Project Overview</h2>
+        <p><b>"The Implementation of MARS-A Questionnaire In A Website for Senior High School students at FEU Alabang"</b></p>
+        <p>Introduction overview of the project: The project focuses on the implementation and effectiveness of Mars-A Integration in web development for senior high school students in FEU Alabang. As technology continues to advance, the demand for web development skills has become increasingly critical in both academic and professional settings.</p>
+        <p>Mars-A will be implemented into the website, allowing students to assess their levels of math anxiety through an accessible and engaging platform.</p>
+    </div>
+
+
+    <div class="image-container">
+        <div class="image-box">
+            <div class="project-title">Project 1: Wine Making</div>
+            <img src="winemaking.png" alt="Project Image 1">
+        </div>
+        <div class="image-box">
+            <div class="project-title">Project 2: Entrepreneurship Business Plan</div>
+            <img src="Business Plan.png" alt="Project Image 2">
+        </div>
+        <div class="image-box">
+            <div class="project-title">Project 3: Wiser Solar Power Workshop</div>
+            <img src="WISER.jpg" alt="Project Image 3">
+        </div>
+    </div>
+
+  
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Main Page</button>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

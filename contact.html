@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="icon" href="Phone.ico" type="image/x-icon">
+	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+   Q
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('backgroundcontacts.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #6e5b75;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 20px;
+            position: relative;
+        }
+
+     
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: -1; 
+        }
+
+     
+        header {
+            font-size: 3rem; 
+            font-family: 'Playfair Display', serif; 
+            color: lightcoral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 40px;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out; 
+        }
+  
+        .content:hover {
+            transform: scale(1.05); 
+        }
+
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: #4E9F6E; 
+        }
+      
+        .back-btn {
+            position: absolute;
+            bottom: 20px;
+            width: 200px;
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 25px;
+            background-color: #A67B75;
+            color: white;
+            border: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #8C675D;
+            transform: scale(1.05);
+        }
+
+       
+        @media (max-width: 768px) {
+            .content {
+                padding: 30px;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  
+    
+    <header>
+        <p>Contact</p>
+    </header>
+
+   
+    <div class="content">
+        <h2>My Contact Information</h2>
+        <ul>
+            <li>Email: 20235000047@feualabang.edu.ph</li>
+            <li>Phone Number: 09151968230</li>
+            <li>School: FEU Alabang</li>
+            <li>Address: Carmona Cavite, Townhomes Blk 37 Lot 6</li>
+        </ul>
+    </div>
+
+   
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Main Page</button>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
